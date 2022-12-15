@@ -38,6 +38,13 @@ $ just secrets
 
 ## Demo
 
+```just
+build-target CONFIG TARGET:
+    echo {{CONFIG}} {{TARGET}}
+
+build CONFIG: (build-target CONFIG "all")
+```
+
 (these images are cropped...)
 
 ### listing recipes with docs
